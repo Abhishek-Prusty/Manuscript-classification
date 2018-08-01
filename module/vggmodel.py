@@ -37,7 +37,7 @@ class modelVGG:
 		model.add(Activation("relu"))
 		model.add(BatchNormalization(axis=-1))
 		model.add(MaxPooling2D(pool_size=(2, 2)))
-		model.add(GlobalMaxPooling1D())
+		#model.add(GlobalMaxPooling1D())
 		model.add(Dropout(0.20))
 
 		model.add(Flatten())
